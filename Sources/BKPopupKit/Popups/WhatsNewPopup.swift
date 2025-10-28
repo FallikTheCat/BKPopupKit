@@ -1,0 +1,60 @@
+//
+//  WhatsNewPopup.swift
+//  BK-PopupKit
+//
+//  Created by Baturay Koc on 10/11/25.
+//
+
+import SwiftUI
+
+public struct WhatsNewPopup: View {
+    @Binding var show: PopupType?
+    
+    public var body: some View {
+        BasePopup(show: $show, type: .connection) {
+            VStack(spacing: 25) {
+                Text("We have a new update! 🎉")
+                    .font(.title2)
+                    .bold()
+                    .foregroundColor(.white)
+                Text("Check out our new features!")
+                    .font(.body)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(.white)
+                HStack(spacing: 15){
+                    Button(action:{
+                        withAnimation(.easeInOut(duration: 0.5)) {
+                            show = nil
+                        }
+                    }) {
+                        ZStack{
+                            RoundedRectangle(cornerRadius: 25)
+                                .frame(width: 125, height: 50)
+                                .foregroundColor(.white)
+                            Text("Later")
+                                .font(.headline)
+                                .bold()
+                                .foregroundColor(.black)
+                        }
+                    }
+                    Button(action:{
+                        ///TODO: Action
+                        withAnimation(.easeInOut(duration: 0.5)) {
+                            show = nil
+                        }
+                    }) {
+                        ZStack{
+                            RoundedRectangle(cornerRadius: 25)
+                                .frame(width: 125, height: 50)
+                                .foregroundColor(.white)
+                            Text("Let's Go!")
+                                .font(.headline)
+                                .bold()
+                                .foregroundColor(.black)
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
