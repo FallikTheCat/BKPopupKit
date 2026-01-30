@@ -13,11 +13,11 @@ public struct PermissionPopup: View {
     public var body: some View {
         BasePopup(show: $show, type: .connection) {
             VStack(spacing: 25) {
-                Text("Need **** Permission")
+                Text("Need Permission")
                     .font(.title2)
                     .bold()
                     .foregroundColor(.white)
-                Text("We need **** permission to use some features.")
+                Text("We need this permission to use some features.")
                     .font(.body)
                     .multilineTextAlignment(.center)
                     .foregroundColor(.white)

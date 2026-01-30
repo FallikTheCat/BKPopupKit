@@ -20,6 +20,8 @@ public struct BasePopup<Content: View>: View {
     
     public var body: some View {
         ZStack {
+            Color.white
+                .ignoresSafeArea()
             Color.black.opacity(0.75)
                 .ignoresSafeArea()
                 .onTapGesture { dismiss() }

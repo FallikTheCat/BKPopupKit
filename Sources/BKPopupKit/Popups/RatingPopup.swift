@@ -16,7 +16,7 @@ public struct RatingPopup: View {
     public var body: some View {
         BasePopup(show: $show, type: .connection) {
             VStack(spacing: 25) {
-                Text("Do you like ****?")
+                Text("Do you like the app?")
                     .font(.title2)
                     .bold()
                     .foregroundColor(.white)
