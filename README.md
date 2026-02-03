@@ -6,13 +6,13 @@ A centralized SwiftUI Popup SDK designed to handle all the application's messagi
 
 ## Features
 
-- **🛠 Specialized Popup Types**: Pre-built layouts for almost every mobile app scenario.
+- **Specialized Popup Types**: Pre-built layouts for almost every mobile app scenario.
 
-- **🛠 Centralized Management**: Trigger popups from ViewModels or Views using PopupManager.shared. No more state bloat. 
+- **Centralized Management**: Trigger popups from ViewModels or Views using PopupManager.shared. No more state bloat. 
 
-- **📦 Global Hosting**: Use the .popupHost() modifier once at the top level and let the SDK handle the rest.
+- **Global Hosting**: Use the .popupHost() modifier once at the top level and let the SDK handle the rest.
 
-- **✨ Smooth Transitions**: Integrated spring animations and background dimming.
+- **Smooth Transitions**: Integrated spring animations and background dimming.
 
 ---
 
@@ -81,7 +81,7 @@ struct MyApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .popupHost() // The magic happens here
+                .popupHost()
         }
     }
 }
