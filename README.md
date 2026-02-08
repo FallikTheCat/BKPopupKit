@@ -61,7 +61,7 @@ A centralized SwiftUI Popup SDK designed to handle all the application's messagi
 Swift Package Manager (SPM)
 In Xcode, go to File > Add Packages...
 
-Enter the repository URL: [BKPopupKit](https://github.com/FallikTheCat/BKPopupKit)
+Enter the repository URL: [BKPopupKit](https://github.com/KocBaturay/BKPopupKit)
 
 Select Up to Next Major Version and click Add Package.
 
